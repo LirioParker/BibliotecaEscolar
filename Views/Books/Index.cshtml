@@ -1,0 +1,46 @@
+@model IEnumerable<BibliotecaEscolar.Models.Book>
+
+@{
+    ViewData["Title"] = "Lista de Livros";
+}
+
+<form asp-action="Index" method="get" class="row mb-4">
+    <div class="col-md-3">
+        <input type="text" name="buscaTitulo" class="form-control" placeholder="Buscar por titulo" />
+    </div>
+    <div class="col-md-3">
+        <input type="text" name="buscaAutor" class="form-control" placeholder="Buscar por autor" />
+    </div>
+    <div class="col-md-2">
+        <input type="number" name="ano" class="form-control" placeholder="Ano" />
+    </div>
+    <div class="col-md-2">
+        <button type="submit" class="btn btn-primary">Buscar</button>
+    </div>
+</form>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Ano</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model)
+{
+        <tr>
+            <td>@item.Titulo</td>
+            <td>@item.Autor</td>
+            <td>@item.Ano</td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-secondary">Detalhes</a>
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-primary">Editar</a> 
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Remover</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
