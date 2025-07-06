@@ -310,3 +310,11 @@ C:\Projects\Biblioteca escolar\BibliotecaEscolar\bin\Debug\net8.0\publicar\Bibli
 C:\Projects\Biblioteca escolar\BibliotecaEscolar\bin\Debug\net8.0\publicar\BibliotecaEscolar.runtimeconfig.json
 C:\Projects\Biblioteca escolar\BibliotecaEscolar\bin\Debug\net8.0\publicar\BibliotecaEscolar.staticwebassets.endpoints.json
 C:\Projects\Biblioteca escolar\BibliotecaEscolar\bin\Debug\net8.0\publicar\libman.json
+C:\Projects\Biblioteca escolar\BibliotecaEscolar\bin\Debug\net8.0\publicar\publicar\web.config
+C:\Projects\Biblioteca escolar\BibliotecaEscolar\bin\Debug\net8.0\publicar\publicar\appsettings.Development.json
+C:\Projects\Biblioteca escolar\BibliotecaEscolar\bin\Debug\net8.0\publicar\publicar\appsettings.json
+C:\Projects\Biblioteca escolar\BibliotecaEscolar\bin\Debug\net8.0\publicar\publicar\BibliotecaEscolar.deps.json
+C:\Projects\Biblioteca escolar\BibliotecaEscolar\bin\Debug\net8.0\publicar\publicar\BibliotecaEscolar.runtimeconfig.json
+C:\Projects\Biblioteca escolar\BibliotecaEscolar\bin\Debug\net8.0\publicar\publicar\BibliotecaEscolar.staticwebassets.endpoints.json
+C:\Projects\Biblioteca escolar\BibliotecaEscolar\bin\Debug\net8.0\publicar\publicar\libman.json
+C:\Projects\Biblioteca escolar\BibliotecaEscolar\obj\Debug\net8.0\BibliotecaEscolar.sourcelink.json

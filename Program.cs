@@ -9,6 +9,13 @@ builder.Services.AddDbContext<BibliotecaContext>(options => options.UseSqlite("D
 
 var app = builder.Build();
 
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<BibliotecaContext>();
+    db.Database.Migrate(); // <- aplica as migrations no Render automaticamente
+}
+
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
