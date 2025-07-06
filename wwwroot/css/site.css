@@ -1,7 +1,5 @@
-/* BASE */
 html {
   font-size: 14px;
-  scroll-behavior: smooth;
 }
 
 @media (min-width: 768px) {
@@ -10,107 +8,58 @@ html {
   }
 }
 
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
-  background-color: #F6F1E7; /* Bege claro */
-  color: #001F4E; /* Azul escuro */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
+  background-color: #e9e9ef;
+  margin-bottom: 60px;
 }
 
-/* CABEÇALHO E NAVEGAÇÃO */
-header {
-  background-color: #001F4E;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-}
-
-.navbar a.nav-link {
-  color: #C9A14D !important; /* Dourado claro */
-  font-weight: 600;
-  margin: 0 10px;
-  transition: color 0.3s ease;
-}
-
-.navbar a.nav-link:hover {
-  color: #FFFFFF !important;
-  text-decoration: underline;
-}
-
-/* TÍTULOS */
-h1, h2 {
-  color: #001F4E;
+h1{
+  color: #191B4E;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-/* TABELAS */
+h2 {
+  color: #191B4E;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: #E0D2B0; /* Tom suave de dourado */
+  background-color: #3B40B8;
+  color: #3B40B8;
 }
 
-.table-striped tbody tr:nth-of-type(even) {
-  background-color: #FFFFFF;
+.navbar a.nav-link {
+  color:#EDBD7F !important;
+  font-weight: bold;
 }
 
-.table-striped tbody tr td {
-  color: #001F4E;
+header{
+  background-color: #DDDDE3;
+  color: #191B4E;
 }
 
-/* BOTÕES */
-.btn {
-  background-color: #B82025; /* Vermelho escuro */
-  color: #FFFFFF;
-  border: none;
-  padding: 10px 20px;
-  font-weight: 600;
-  border-radius: 6px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+footer{
+  background-color: #DDDDE3;
+  color: #DDDDE3;
+  padding: 7px 0;
+  text-align: center;
 }
-
-.btn:hover {
-  background-color: #8E1A1E;
-  transform: scale(1.03);
-}
-
-.btn:focus,
-.btn:active:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #205AA7;
-}
-
-/* FORMULÁRIOS */
-.form-control:focus,
-.form-check-input:focus {
-  border-color: #205AA7;
-  box-shadow: 0 0 0 0.2rem rgba(32, 90, 167, 0.25);
-}
-
-.form-floating > .form-control::placeholder {
-  color: #888;
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
   text-align: end;
 }
 
-.form-floating > .form-control:focus::placeholder {
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
-}
-
-/* RODAPÉ */
-footer {
-  background-color: #001F4E;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 15px 0;
-  font-size: 0.9rem;
-}
-
-/* UTILITÁRIOS */
-.shadow-box {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  background-color: #FFFFFF;
-  padding: 20px;
-  margin-bottom: 20px;
 }
