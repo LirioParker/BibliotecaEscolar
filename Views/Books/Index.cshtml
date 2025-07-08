@@ -4,6 +4,10 @@
     ViewData["Title"] = "Lista de Livros";
 }
 
+<p>
+    <a asp-action="Create" class="btn btn-success">Adicionar Livro</a>
+</p>
+
 <form asp-action="Index" method="get" class="row mb-4">
     <div class="col-md-3">
         <input type="text" name="buscaTitulo" class="form-control" placeholder="Buscar por titulo" />
@@ -12,16 +16,9 @@
         <input type="text" name="buscaAutor" class="form-control" placeholder="Buscar por autor" />
     </div>
     <div class="col-md-2">
-        <input type="number" name="ano" class="form-control" placeholder="Ano" />
-    </div>
-    <div class="col-md-2">
         <button type="submit" class="btn btn-primary">Buscar</button>
     </div>
 </form>
-
-<p>
-    <a asp-action="Create" class="btn btn-success">Adicionar Livro</a>
-</p>
 
 <table class="table table-striped">
     <thead>
@@ -29,7 +26,7 @@
             <th>Título</th>
             <th>Autor</th>
             <th>Ano</th>
-            <th></th>
+            <th>Genero</th>
         </tr>
     </thead>
     <tbody>
