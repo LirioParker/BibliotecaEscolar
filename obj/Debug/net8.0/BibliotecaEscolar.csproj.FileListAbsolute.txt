@@ -318,3 +318,5 @@ C:\Projects\Biblioteca escolar\BibliotecaEscolar\bin\Debug\net8.0\publicar\publi
 C:\Projects\Biblioteca escolar\BibliotecaEscolar\bin\Debug\net8.0\publicar\publicar\BibliotecaEscolar.staticwebassets.endpoints.json
 C:\Projects\Biblioteca escolar\BibliotecaEscolar\bin\Debug\net8.0\publicar\publicar\libman.json
 C:\Projects\Biblioteca escolar\BibliotecaEscolar\obj\Debug\net8.0\BibliotecaEscolar.sourcelink.json
+C:\Projects\Biblioteca escolar\BibliotecaEscolar\bin\Debug\net8.0\Npgsql.dll
+C:\Projects\Biblioteca escolar\BibliotecaEscolar\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
