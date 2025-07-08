@@ -38,7 +38,7 @@ namespace BibliotecaEscolar.Controllers
                 livros = livros.Where(b => b.Ano == Ano.Value);
             }
 
-            return View(await _context.Livros.ToListAsync());
+            return View(await livros.ToListAsync());
         }
 
         // GET: Books/Details/5
