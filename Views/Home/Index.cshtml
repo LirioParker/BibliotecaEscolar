@@ -1,7 +1,32 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Biblioteca Escolar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome ...</h1>
+<div class="container py-5 text-center">
+    <h1 class="display-4 mb-3">Bem-vindo à Biblioteca Escolar</h1>
+    <p class="lead mb-4">Biblioteca de livros aberta ao publico</p>
+
+    <a href="/Books" class="btn btn-primary btn-lg">Ver Livros</a>
+    <a href="/Alunos" class="btn btn-outline-secondary btn-lg ms-2">Área do Aluno</a>
 </div>
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <h4>Catálogo</h4>
+                <p>livros para todos todos.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <h4>100% Gratuita</h4>
+                <p>Plataforma de acesso gratuito a todos os alunos.</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <h4>Fácil de Usar</h4>
+                <p>Navegue e encontre seus livros.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
